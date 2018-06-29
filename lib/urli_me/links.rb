@@ -18,6 +18,12 @@ module UrliMe
       response.body
     end
 
+    def update_link(token, link)
+      response = HTTParty.patch(links_url + '/' + token,
+                                query: query_link(link), headers: header_request)
+      response.body
+    end
+
     private
 
     def query_link(link)
