@@ -58,7 +58,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   byebug
-  coveralls (>= 0.7.0)
+  coveralls
   httparty
   rake (~> 10.0)
   rubocop
