@@ -3,7 +3,24 @@ module UrliMe
   # class related to request links
   module Links
     def all_links
-      HTTParty.get(links_url, headers: header_request)
+      response = HTTParty.get(links_url, headers: header_request)
+      response.body
+    end
+
+    def create_link(link)
+      response = HTTParty.post(links_url, query: query_link(link),
+                                          headers: header_request)
+      response.body
+    end
+
+    private
+
+    def query_link(link)
+      {
+        link: {
+          original_url: link
+        }
+      }
     end
   end
 end
