@@ -7,6 +7,11 @@ module UrliMe
       response.body
     end
 
+    def get_link(token)
+      response = HTTParty.get(links_url + '/' + token, headers: header_request)
+      response.body
+    end
+
     def create_link(link)
       response = HTTParty.post(links_url, query: query_link(link),
                                           headers: header_request)
