@@ -1,7 +1,8 @@
 require 'httparty'
 require 'byebug'
-require 'urli_me/version'
-require 'urli_me/init'
+require_relative 'urli_me/version'
+require_relative 'urli_me/init'
+require_relative 'urli_me/links'
 
 # lib/urli_me.rb
 module UrliMe
