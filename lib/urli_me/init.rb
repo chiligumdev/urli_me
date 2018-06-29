@@ -1,4 +1,5 @@
-require_relative 'links'
+require 'urli_me'
+require 'urli_me/links'
 # lib/urli_me/init.rb
 module UrliMe
   # class init access

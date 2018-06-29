@@ -1,5 +1,4 @@
 require 'httparty'
-require 'byebug'
 require_relative 'urli_me/version'
 require_relative 'urli_me/init'
 require_relative 'urli_me/links'
