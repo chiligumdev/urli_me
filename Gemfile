@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'byebug', require: false
+gem 'coveralls', require: false
 gem 'httparty'
 gem 'rubocop', require: false
 
