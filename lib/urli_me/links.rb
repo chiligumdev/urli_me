@@ -24,6 +24,11 @@ module UrliMe
       response.body
     end
 
+    def delete_link(token)
+      response = HTTParty.delete(links_url + '/' + token, headers: header_request)
+      response.body
+    end
+
     private
 
     def query_link(link)
