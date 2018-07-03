@@ -61,7 +61,7 @@ DEPENDENCIES
   byebug
   coveralls
   httparty
-  minitest
+  minitest (~> 5.11)
   rake (~> 10.0)
   rubocop
   urli_me!
