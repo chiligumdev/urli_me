@@ -4,32 +4,25 @@ module UrliMe
   # class related to request links
   module Links
     def all_links
-      response = HTTParty.get(links_url, headers: header_request)
-      response
+      HTTParty.get(links_url, headers: header_request)
     end
 
     def get_link(token)
-      response = HTTParty.get(links_url + '/' + token, headers: header_request)
-      response
+      HTTParty.get(links_url + '/' + token, headers: header_request)
     end
 
     def create_link(link)
-      response = HTTParty.post(links_url, query: query_link(link),
-                                          headers: header_request)
-      response
+      HTTParty.post(links_url, query: query_link(link),
+                               headers: header_request)
     end
 
     def update_link(token, link)
-      response = HTTParty.patch(links_url + '/' + token,
-                                query: query_link(link),
-                                headers: header_request)
-      response
+      HTTParty.patch(links_url + '/' + token, query: query_link(link),
+                                              headers: header_request)
     end
 
     def delete_link(token)
-      response = HTTParty.delete(links_url + '/' + token,
-                                 headers: header_request)
-      response
+      HTTParty.delete(links_url + '/' + token, headers: header_request)
     end
 
     private
