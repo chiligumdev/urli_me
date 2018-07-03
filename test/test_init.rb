@@ -1,6 +1,6 @@
 # test/test_init.rb
 require_relative 'test_helper.rb'
-require "minitest/autorun"
+require 'minitest/autorun'
 
 class TestInit < Minitest::Test
   def test_url
