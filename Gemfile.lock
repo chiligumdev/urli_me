@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     urli_me (0.1.0)
-      httparty
 
 GEM
   remote: https://rubygems.org/
