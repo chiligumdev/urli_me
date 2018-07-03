@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    urli_me (0.1.0)
+    urli_me (0.2.0)
 
 GEM
   remote: https://rubygems.org/
