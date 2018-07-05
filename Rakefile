@@ -8,6 +8,10 @@ Rake::TestTask.new do |t|
   t.verbose = true
 end
 
+task :console do
+  exec 'irb -r urli_me -I ./lib'
+end
+
 require 'coveralls/rake/task'
 Coveralls::RakeTask.new
 task test_with_coveralls: [:spec, :features, 'coveralls:push']
