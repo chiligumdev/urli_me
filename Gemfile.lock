@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    urli_me (0.2.0)
+    urli_me (0.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -61,4 +61,4 @@ DEPENDENCIES
   urli_me!
 
 BUNDLED WITH
-   1.16.0
+   1.16.2
