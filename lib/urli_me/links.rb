@@ -28,11 +28,7 @@ module UrliMe
     private
 
     def query_link(link)
-      {
-        link: {
-          original_url: link
-        }
-      }
+      { original_url: link }
     end
   end
 end
