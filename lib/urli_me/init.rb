@@ -19,6 +19,7 @@ module UrliMe
       {
         'key' => @key.to_s,
         'pwd' => @pwd.to_s,
+        'external_id' => @external_id.to_s,
         'Content-Type' => 'multipart/form-data'
       }
     end
