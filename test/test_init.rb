@@ -4,6 +4,6 @@ require 'minitest/autorun'
 
 class TestInit < Minitest::Test
   def test_url
-    assert_equal UrliMe::LINKS_URL, 'https://urli.me/api/links'
+    assert_equal UrliMe::DEFAULT_URL, 'https://urli.me/api/links'
   end
 end

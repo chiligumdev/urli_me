@@ -19,13 +19,13 @@ module UrliMe
       {
         'key' => @key.to_s,
         'pwd' => @pwd.to_s,
-        'external_id' => @external_id.to_s,
+        'external-id' => @external_id.to_s,
         'Content-Type' => 'multipart/form-data'
       }
     end
 
     def links_url
-      UrliMe::LINKS_URL
+      UrliMe::ALLOWED_URLS.include?(@url) ? @url : UrliMe::DEFAULT_URL
     end
   end
 end
